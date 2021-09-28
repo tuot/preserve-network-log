@@ -1,4 +1,6 @@
-chrome.devtools.network.onRequestFinished.addListener(function (request) {
-  request.getContent((content, encoding) => {
-  });
-});
+chrome.devtools.panels.create(
+  "Preserve Network Log",
+  "",
+  "index.html",
+  function (panel) {}
+);
